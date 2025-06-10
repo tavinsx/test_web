@@ -6,6 +6,7 @@ import Navbar from './components/navbar'
 function App() {
   return(
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/post" element={<Posts />} />
         <Route path="/dados/:id" element={<Dados/>} />
