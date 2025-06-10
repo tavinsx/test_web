@@ -1,12 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Posts from './pages/posts'
-import Post, { Dados } from './pages/posts'
+import Dados from './pages/dados'
+import Navbar from './components/navbar'
 
 function App() {
   return(
     <BrowserRouter>
       <Routes>
-        <Route path="" element={<Posts />} />
+        <Route path="/post" element={<Posts />} />
+        <Route path="/dados/:id" element={<Dados/>} />
       </Routes>
     </BrowserRouter>
   )
